@@ -6,7 +6,6 @@ public class HelloWorld {
         int b = 2;
         int result = add(a, b);
         System.out.println(result);
-        System.out.println("Hello world It Tom again!");
     }
 
     private static int add(int a, int b) {
