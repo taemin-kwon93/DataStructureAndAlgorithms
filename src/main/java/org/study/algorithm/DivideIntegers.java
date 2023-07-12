@@ -1,6 +1,6 @@
 package org.study.algorithm;
 
-public class DevideResult {
+public class DivideIntegers {
     public static void main(String[] args) {
         int answer = solution(7, 3);
         System.out.println(answer);
