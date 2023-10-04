@@ -42,3 +42,4 @@ bin/
 .DS_Store
 
 src/main/java/org/review/
+src/main/java/org/study/do_it_algorithm
