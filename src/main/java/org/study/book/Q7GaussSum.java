@@ -1,8 +1,8 @@
 package org.study.book;
 
-public class GaussSum {
+public class Q7GaussSum {
     public static void main(String[] args) {
-        GaussSum gaussSum = new GaussSum();
+        Q7GaussSum gaussSum = new Q7GaussSum();
         int result = gaussSum.genericForSumMethod(9);
         System.out.println("result: " + result);
         int result2 = gaussSum.gaussSumMethod(9);
