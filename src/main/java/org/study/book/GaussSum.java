@@ -1,16 +1,16 @@
 package org.study.book;
 
-import java.util.Scanner;
-
 public class GaussSum {
-//    Scanner stdIn = new Scanner(System.in);
-
     public static void main(String[] args) {
         GaussSum gaussSum = new GaussSum();
         int result = gaussSum.genericForSumMethod(9);
         System.out.println("result: " + result);
         int result2 = gaussSum.gaussSumMethod(9);
         System.out.println(result2);
+        int result3 = gaussSum.genericForSumMethod(11);
+        System.out.println("result: " + result3);
+        int result4 = gaussSum.gaussSumMethod(11);
+        System.out.println(result4);
     }
 
     public int genericForSumMethod(int n) {
