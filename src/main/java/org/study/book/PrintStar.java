@@ -12,8 +12,8 @@ public class PrintStar {
     }
 
     private void printStar(int n, int x) {
-        int y = n / x;
-        int z = n % x;
+        int y = n / x; // 줄 수
+        int z = n % x; // 나머지
 
         for(int i = 0; i < y; i++) {
             for(int j = 0; j < x; j++) {
