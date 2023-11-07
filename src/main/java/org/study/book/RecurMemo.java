@@ -5,8 +5,10 @@ import java.util.Scanner;
 
 public class RecurMemo {
     static String[] memo;
+    static int counter = 0;
 
     static void recur (int n) {
+        counter++;
         if (memo[n + 1] != null) System.out.println("memo: " + memo[n + 1]); // 메모된 내용 출력
         else {
             if (n > 0){
@@ -28,5 +30,6 @@ public class RecurMemo {
         memo = new String[x + 2];
         recur(x);
         System.out.println("Arrays.toString(memo): " + Arrays.toString(memo));
+        System.out.println("count: " + counter);
     }
 }
