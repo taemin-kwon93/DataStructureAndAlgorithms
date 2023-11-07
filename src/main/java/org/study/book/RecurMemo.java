@@ -16,7 +16,7 @@ public class RecurMemo {
                 System.out.println("실행 2");
                 System.out.println("출력: " + n);
                 recur(n - 2);
-                memo[n + 1] = memo[n] + n + "\n" + memo[n - 1]; // 메모화
+                memo[n + 1] = memo[n] + n + memo[n - 1]; // 메모화
                 System.out.println("메모화 : " + memo[n+1]);
             } else {
                 System.out.println("실행 1");
