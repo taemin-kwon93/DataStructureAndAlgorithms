@@ -34,7 +34,7 @@ public class HeapSort {
     }
 
     public static void main(String[] args) {
-        int[] x = {6, 4, 3, 7, 1, 9, 8, 10};
+        int[] x = {6, 4, 3, 7, 1, 9, 2, 8, 5, 10};
         heapSort(x, x.length);
         System.out.println(Arrays.toString(x));
     }
