@@ -10,7 +10,6 @@ public class HeapSort {
     }
 
     // a[left] ~ a[right]를 힙으로 만듦
-    // downHeap 메서드가 호출될 때마다 오른쪽 그림처럼 배열 값을 트리 형식으로 출력하는 프로그램을 작성하세요.
     static void downHeap(int[] a, int left, int right) {
         int temp = a[left]; // 루트
         int child;          // 큰 값을 갖는 자식
