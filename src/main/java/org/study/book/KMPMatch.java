@@ -2,6 +2,9 @@ package org.study.book;
 
 public class KMPMatch {
 
+    public KMPMatch() {
+    }
+
     // KMP 법으로 문자열 검색
     static int kmpMatch(String txt, String pat) {
         int pt = 1; // txt 커서
