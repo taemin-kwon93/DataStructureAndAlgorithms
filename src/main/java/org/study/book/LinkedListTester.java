@@ -59,10 +59,10 @@ public class LinkedListTester {
         CLEAR("모든 노드를 삭제"),
         SEARCH_NO("번호로 검색"),
         SEARCH_NAME("이름으로 검색"),
-        NEXT("노드를"),
-        PRINT_CRNT("노드를"),
-        DUMP("노드를"),
-        TERMINATE("노드를");
+        NEXT("선택 노드를 하나 뒤쪽으로 진행"),
+        PRINT_CRNT("선택 노드를 출력"),
+        DUMP("모든 노드를 출력"),
+        TERMINATE("종료");
 
         private final String message;
         static Menu MenuAt(int idx){
