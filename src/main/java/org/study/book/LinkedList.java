@@ -105,4 +105,21 @@ public class LinkedList<E> {
         crnt = crnt.next;
         return true;
     }
+
+    // 선택 노드를 출력
+    public void printCurrentNode() {
+        if (crnt == null)
+            System.out.println("선택한 노드가 없습니다.");
+        else
+            System.out.println(crnt.data);
+    }
+
+    // 모든 노드를 출력
+    public void dump() {
+        Node<E> ptr = head;
+        while(ptr != null) {
+            System.out.println(ptr.data);
+            ptr = ptr.next;
+        }
+    }
 }
