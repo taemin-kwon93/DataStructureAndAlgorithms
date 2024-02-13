@@ -82,4 +82,57 @@ public class DoubleLinkedList<E> {
         crnt = crnt.prev;
         return true;
     }
+
+    public void add(E obj) {
+        Node<E> node = new Node<E>(obj, crnt, crnt.next);
+        crnt.next = crnt.next.prev = node;
+        crnt = node;
+    }
+
+    public void addFirst(E obj) {
+        crnt = head;
+        add(obj);
+    }
+
+    public void addLast(E obj) {
+        crnt = head.prev;
+        add(obj);
+    }
+
+    public void removeCurrentNode() {
+        if (!isEmpty()) {
+            crnt.prev.next = crnt.next;
+            crnt.next.prev = crnt.prev;
+            crnt = crnt.prev;
+            if (crnt == head) crnt = head.next;
+        }
+    }
+
+    public void remove (Node p) {
+        Node<E> ptr = head.next;
+
+        while (ptr != head) {
+            if (ptr == p) {
+                crnt = p;
+                removeCurrentNode();
+                break;
+            }
+            ptr = ptr.next;
+        }
+    }
+
+    public void removeFirst() {
+        crnt = head.next;
+        removeCurrentNode();
+    }
+
+    public void removeLast() {
+        crnt = head.prev;
+        removeCurrentNode();
+    }
+
+    public void clear() {
+        while (!isEmpty())
+            removeFirst();
+    }
 }
