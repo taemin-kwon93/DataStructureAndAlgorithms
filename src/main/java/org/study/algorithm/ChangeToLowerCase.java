@@ -6,7 +6,7 @@ public class ChangeToLowerCase {
         System.out.println(answer);
     }
 
-    public static String solution(String myString) {
+    private static String solution(String myString) {
         return myString.toLowerCase();
     }
 }
