@@ -14,7 +14,7 @@ public class GroupOfFivePeople {
     }
 
     private static String[] solution(String[] names) {
-        List<String> result = new ArrayList<String>();
+        List<String> result = new ArrayList<>();
         for (int y = 0; y < names.length; y++) {
             if (y % 5 == 0) result.add(names[y]);
         }

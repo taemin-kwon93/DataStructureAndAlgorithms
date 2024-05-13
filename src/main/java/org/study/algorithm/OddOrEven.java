@@ -19,6 +19,6 @@ public class OddOrEven {
             }
         }
 
-        return (SumOfOdd <= SumOfEven)? SumOfEven : SumOfOdd;
+        return Math.max(SumOfOdd, SumOfEven);
     }
 }
