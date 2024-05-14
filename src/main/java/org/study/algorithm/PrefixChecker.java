@@ -28,4 +28,9 @@ public class PrefixChecker {
 
         return (checker == is_prefix.length()) ? 1 : 0;
     }
+
+    public int solution2(String my_string, String is_prefix) {
+        if (my_string.startsWith(is_prefix)) return 1;
+        return 0;
+    }
 }
