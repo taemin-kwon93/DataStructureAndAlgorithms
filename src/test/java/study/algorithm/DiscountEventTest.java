@@ -18,9 +18,8 @@ public class DiscountEventTest {
     @Test
     void validatePricce() {
         int price = 150000;
-        int discountedPrice = 142500;
 
         int result = discountEvent.solution(price);
-        assertEquals(discountedPrice, result);
+        assertEquals(142500, result);
     }
 }
