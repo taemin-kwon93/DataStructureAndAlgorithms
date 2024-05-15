@@ -10,12 +10,12 @@ public class SubmissionHistory {
         }
 
         a = Arrays.stream(a).sorted().toArray();
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < a.length; i++) {
-            result += (char) a[i];
+            result.append((char) a[i]);
         }
 
-        return result;
+        return result.toString();
     }
 
     public String solution2(String my_string) {
