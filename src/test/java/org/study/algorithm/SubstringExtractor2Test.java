@@ -1,12 +1,10 @@
-package study.algorithm;
-
-import org.study.algorithm.SubstringExtractor2;
+package org.study.algorithm;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class SubstringExtractor2Test {
+class SubstringExtractor2Test {
     private SubstringExtractor2 subStrExtractor2;
 
     @BeforeEach

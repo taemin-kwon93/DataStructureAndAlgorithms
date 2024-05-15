@@ -1,12 +1,10 @@
-package study.algorithm;
+package org.study.algorithm;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.study.algorithm.DiscountEvent;
-
-public class DiscountEventTest {
+class DiscountEventTest {
 
     private DiscountEvent discountEvent;
 

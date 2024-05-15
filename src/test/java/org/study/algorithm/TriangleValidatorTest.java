@@ -1,11 +1,11 @@
-package study.algorithm;
+package org.study.algorithm;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.study.algorithm.TriangleValidator2;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TriangleValidatorTest {
+class TriangleValidatorTest {
 
     private TriangleValidator2 validator2;
 

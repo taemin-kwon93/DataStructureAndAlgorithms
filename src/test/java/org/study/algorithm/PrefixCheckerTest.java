@@ -1,12 +1,11 @@
-package study.algorithm;
+package org.study.algorithm;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.study.algorithm.PrefixChecker;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PrefixCheckerTest {
+class PrefixCheckerTest {
 
     private PrefixChecker preCheck;
 
