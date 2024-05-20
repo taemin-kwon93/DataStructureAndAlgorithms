@@ -6,6 +6,6 @@ package org.study.algorithm;
 
 public class ConvertToString {
     public String solution(int n) {
-        return ""+n; // 테스트 코드 생략
+        return ""+n;
     }
 }
