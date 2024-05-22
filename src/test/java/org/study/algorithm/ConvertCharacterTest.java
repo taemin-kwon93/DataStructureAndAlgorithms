@@ -16,6 +16,6 @@ class ConvertCharacterTest {
     @Test
     void solution() {
         String result = convertCharacter.solution("masterpiece");
-        System.out.println(result);
+        assertEquals("rnasterpiece", result);
     }
 }
