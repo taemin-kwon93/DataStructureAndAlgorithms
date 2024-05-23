@@ -11,16 +11,12 @@ public class SimpleExpressionEvaluator {
         int a = Integer.parseInt(parts[0]);
         int b = Integer.parseInt(parts[2]);
 
-        switch(parts[1]) {
-            case "+" :
-                return a + b;
-            case "-" :
-                return a - b;
-            case "*" :
-                return a * b;
-            case "/":
-                return a / b;
-        }
-        return 0;
+        return switch (parts[1]) {
+            case "+" -> a + b;
+            case "-" -> a - b;
+            case "*" -> a * b;
+            case "/" -> a / b;
+            default -> 0;
+        };
     }
 }
