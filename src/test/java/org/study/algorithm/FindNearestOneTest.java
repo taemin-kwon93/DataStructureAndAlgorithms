@@ -14,14 +14,14 @@ class FindNearestOneTest {
     }
 
     @Test
-    void shouldReturnIdxWhenExistsNumberOne() {
+    void shouldReturnCorrectIndexWhenOneExistsAfterIdx() {
         int[] arr = {1, 1, 1, 1, 0};
         int result = findNearestOne.solution(arr, 3);
         assertEquals(3, result);
     }
 
     @Test
-    void shouldReturnMinusOneWhenDoseNotExistsNumberOne() {
+    void shouldReturnMinusOneWhenNoOneExistsAfterIdx() {
         int[] arr = {1, 0, 0, 1, 0, 0};
         int result = findNearestOne.solution(arr, 4);
         assertEquals(-1, result);
