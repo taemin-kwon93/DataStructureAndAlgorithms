@@ -16,5 +16,6 @@ class RemainderByNineTest {
     @Test
     void solution() {
         int result = remainderByNine.solution("78720646226947352489");
+        assertEquals(2, result);
     }
 }
