@@ -10,6 +10,6 @@ public class HarshadNumberChecker {
         for (char c : s.toCharArray()) ia[counter++] = c - 48;
         for (int i : ia) sumCaNumbes += i;
 
-        return x % sumCaNumbes == 0 ? true : false;
+        return x % sumCaNumbes == 0;
     }
 }

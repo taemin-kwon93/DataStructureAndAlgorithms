@@ -16,12 +16,12 @@ class HarshadNumberCheckerTest {
     @Test
     void shouldReturnTrueWhenHarshadNumber() {
         boolean result = harshadNumberChecker.solution(10);
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
     void shouldReturnFalseWhenNotHarshadNumber() {
         boolean result = harshadNumberChecker.solution(11);
-        assertEquals(false, result);
+        assertFalse(result);
     }
 }
