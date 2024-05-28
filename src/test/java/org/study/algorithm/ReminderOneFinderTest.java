@@ -16,6 +16,6 @@ class ReminderOneFinderTest {
     @Test
     void solution() {
         int result = reminderOneFinder.solution(10);
-        System.out.println(result);
+        assertEquals(3, result);
     }
 }
