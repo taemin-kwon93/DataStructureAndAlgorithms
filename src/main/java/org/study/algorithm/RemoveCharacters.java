@@ -9,12 +9,12 @@ public class RemoveCharacters {
         StringBuilder answer = new StringBuilder();
 
         char[] x = my_string.toCharArray();
-        for (int i = 0; i < indices.length; i++) {
-            x[indices[i]] = '^';
+        for (int index : indices) {
+            x[index] = '^';
         }
-        for (int z = 0; z < x.length; z++) {
-            if (x[z] != '^') {
-                answer.append(x[z]);
+        for (char c : x) {
+            if (c != '^') {
+                answer.append(c);
             }
         }
         return answer.toString();
