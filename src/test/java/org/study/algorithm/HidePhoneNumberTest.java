@@ -21,4 +21,13 @@ class HidePhoneNumberTest {
 
         assertEquals("*******4444", result);
     }
+
+    @Test
+    void solution2() {
+        String phone_number = "01033334444";
+
+        String result = hidePhoneNumber.solution2(phone_number);
+
+        assertEquals("*******4444", result);
+    }
 }
