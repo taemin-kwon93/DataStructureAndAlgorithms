@@ -11,12 +11,13 @@ public class RemoveSmallestNumber {
         List<Integer> list = new ArrayList<>();
         int[] answer = new int[arr.length - 1];
         int min = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            min = Math.min(min, arr[i]);
+
+        for (int j : arr) {
+            min = Math.min(min, j);
         }
 
-        for (int j = 0; j < arr.length; j++) {
-            if (arr[j] != min) list.add(arr[j]);
+        for (int i : arr) {
+            if (i != min) list.add(i);
         }
 
         for (int k = 0; k < answer.length; k++) {
