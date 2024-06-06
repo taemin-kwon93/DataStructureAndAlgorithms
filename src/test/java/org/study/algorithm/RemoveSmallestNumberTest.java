@@ -32,4 +32,24 @@ class RemoveSmallestNumberTest {
 
         assertArrayEquals(expected, result);
     }
+
+    @Test
+    void shouldReturnArrayWhenExistAnswer2() {
+        int[] arr = {4,3,2,1};
+        int[] expected = {4, 3, 2};
+
+        int[] result = removeSmallestNumber.solution2(arr);
+
+        assertArrayEquals(expected, result);
+    }
+
+    @Test
+    void shouldReturnArrayContainingMinusOne2() {
+        int[] arr = {10};
+        int[] expected = {-1};
+
+        int[] result = removeSmallestNumber.solution2(arr);
+
+        assertArrayEquals(expected, result);
+    }
 }

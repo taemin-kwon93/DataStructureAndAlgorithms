@@ -27,4 +27,18 @@ public class RemoveSmallestNumber {
 
         return answer.length > 0 ? answer : new int[] {-1};
     }
+
+    public int[] solution2(int[] arr) {
+        int min = arr[0];
+        int[] answer = new int[arr.length - 1];
+        int idx = 0;
+
+        for (int i : arr) min = Math.min(min, i);
+        for (int j : arr) {
+            if (j == min) continue;
+            answer[idx++] = j;
+        }
+
+        return answer.length > 0 ? answer : new int[] {-1};
+    }
 }
