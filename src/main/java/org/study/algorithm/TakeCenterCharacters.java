@@ -9,7 +9,8 @@ public class TakeCenterCharacters {
 
         String a = String.valueOf(s.charAt((s.length() / 2) - 1));
         String b = String.valueOf(s.charAt((s.length() / 2)));
-        sb = (s.length() % 2 == 0) ? sb.append(a).append(b) : sb.append(b);
+        if ((s.length() % 2 == 0)) sb.append(a).append(b);
+        else sb.append(b);
 
         return sb.toString();
     }
