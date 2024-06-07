@@ -15,11 +15,13 @@ class TakeCenterCharactersTest {
     @Test
     void case1() {
         String result = takeCenterCharacters.solution("abcde");
+        assertEquals("c", result);
     }
 
     @Test
     void case2() {
         String result = takeCenterCharacters.solution("qwer");
+        assertEquals("we", result);
     }
 
     @Test
