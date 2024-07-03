@@ -22,4 +22,14 @@ class LongestPalindromeSubstringTest {
 
         assertEquals(expected, result);
     }
+
+    @Test
+    void solutionB() {
+        String s = "dcbabcdd";
+        String expected = "dcbabcd";
+
+        String result = longestPalindromeSubstring.solutionB(s);
+
+        assertEquals(expected, result);
+    }
 }
