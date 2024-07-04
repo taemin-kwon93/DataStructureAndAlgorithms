@@ -50,11 +50,13 @@ public class LongestPalindromeSubstring {
     }
 
     public void extendPalindrome(String s, int j, int k) {
+        // 팰린드롬을 발견하면 범위를 확장합니다.
         while (j >= 0 && k < s.length() && s.charAt(j) == s.charAt(k)) {
             j--;
             k++;
         }
 
+        // 가장 긴 팰린드롬 부분 문자열 값 셋팅
         if (maxLen < k - j ) {
             left = j + 1;
             maxLen = k - j - 1;
