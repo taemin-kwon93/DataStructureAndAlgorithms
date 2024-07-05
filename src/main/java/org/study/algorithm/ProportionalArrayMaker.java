@@ -9,9 +9,7 @@ public class ProportionalArrayMaker {
         int[][] answer = flag ? new int[y][y] : new int[x][x];
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                answer[i][j] = arr[i][j];
-            }
+            System.arraycopy(arr[i], 0, answer[i], 0, arr[i].length);
         }
 
         return answer;
