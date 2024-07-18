@@ -1,7 +1,6 @@
 package org.study.algorithm;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class RankStudentsByAverageScore {
     public int[] solution(int[][] score) {
@@ -16,12 +15,7 @@ public class RankStudentsByAverageScore {
         }
 
         // 내림차순으로 해당 평균 점수를 기준으로 인덱스를 정렬합니다.
-        Arrays.sort(indices, new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return Double.compare(averages[o2], averages[o1]);
-            }
-        });
+        Arrays.sort(indices, (o1, o2) -> Double.compare(averages[o2], averages[o1]));
 
         // ranks 배열을 생성하고 동점에 대한 처리를 함
         int[] ranks = new int[n];
