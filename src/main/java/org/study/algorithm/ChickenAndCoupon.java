@@ -14,10 +14,9 @@ public class ChickenAndCoupon {
             answer += chicken / 10;
             remain += chicken % 10;
             chicken /= 10;
-            if (chicken < 11 && chicken % 10 == 0) {
-                remain++;
-            } else if (chicken < 11) {
+            if (chicken < 11) {
                 remain += chicken;
+                chicken /= 10;
             }
             if (remain >= 10) {
                 remain++;
@@ -29,12 +28,10 @@ public class ChickenAndCoupon {
     }
 
     public int solutionB(int chicken) {
-        int coupon = chicken;
         int service = 0;
-
-        while (coupon >= 10) {
-            service += coupon / 10;
-            coupon = coupon /10 + coupon % 10;
+        while (chicken >= 10) {
+            service += chicken / 10;
+            chicken = chicken /10 + chicken % 10;
         }
         return service;
     }
