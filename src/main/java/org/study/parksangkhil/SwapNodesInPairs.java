@@ -31,6 +31,8 @@ public class SwapNodesInPairs {
 
     // ListNode 순서 수정
     public ListNode swapPairsB(ListNode head) {
+        if (head == null) return null;
+        if (head.next == null) return head;
         // head Node와 그 다음 node가 교환되므로 next가 root가 됨.
         ListNode root = head.next;
         // node의 첫번째 교환을 위한 임시 노드를 생성. 이후 해당 node는 포인터와 같은 역할을 함
