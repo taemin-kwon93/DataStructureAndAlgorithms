@@ -47,4 +47,25 @@ class SwapNodesInPairsTest {
         assertEquals(6, result.next.next.next.next.val);
         assertEquals(5, result.next.next.next.next.next.val);
     }
+
+    @Test
+    void swapPairsB() {
+        ListNode tail = new ListNode(6);
+        ListNode ln5 = new ListNode(5, tail);
+        ListNode ln4 = new ListNode(4, ln5);
+        ListNode ln3 = new ListNode(3, ln4);
+        ListNode ln2 = new ListNode(2, ln3);
+        ListNode head = new ListNode(1, ln2);
+
+        ListNode result = swapNodesInPairs.swapPairsB(head);
+
+        // 초기값: 1 -> 2 -> 3 -> 4 -> 5 -> 6
+        // 기대값: 2 -> 1 -> 4 -> 3 -> 6 -> 5
+        assertEquals(2, result.val);
+        assertEquals(1, result.next.val);
+        assertEquals(4, result.next.next.val);
+        assertEquals(3, result.next.next.next.val);
+        assertEquals(6, result.next.next.next.next.val);
+        assertEquals(5, result.next.next.next.next.next.val);
+    }
 }
