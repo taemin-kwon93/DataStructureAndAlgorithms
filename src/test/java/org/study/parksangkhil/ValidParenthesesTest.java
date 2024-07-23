@@ -29,4 +29,20 @@ class ValidParenthesesTest {
         boolean result = validParentheses.isValid(input);
         assertEquals(expected, result);
     }
+
+    @ParameterizedTest
+    @CsvSource({
+            "'()', true",
+            "'()[]{}', true",
+            "'(]', false",
+            "'([)]', false",
+            "'{[]}', true",
+            "'', true",
+            "'[', false",
+            "'}}', false"
+    })
+    void isValidB(String input, boolean expected) {
+        boolean result = validParentheses.isValidB(input);
+        assertEquals(expected, result);
+    }
 }

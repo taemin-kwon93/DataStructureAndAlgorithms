@@ -2,6 +2,8 @@ package org.study.parksangkhil;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ValidParentheses {
     // 내 방식대로 처음 풀어본 stack 문제
@@ -32,5 +34,24 @@ public class ValidParentheses {
         }
 
         return dq.isEmpty();
+    }
+
+    public boolean isValidB(String s) {
+        Deque<Character> stack = new ArrayDeque<>();
+        Map<Character, Character> table = new HashMap<>() {{
+            put(')','(');
+            put('}', '{');
+            put(']', '[');
+        }};
+
+        for (int i = 0; i < s.length(); i++) {
+            if (!table.containsKey(s.charAt(i))) {
+                stack.push(s.charAt(i));
+            } else if (stack.isEmpty() || stack.pop() != table.get(s.charAt(i))) {
+                return false;
+            }
+        }
+
+        return stack.isEmpty();
     }
 }
