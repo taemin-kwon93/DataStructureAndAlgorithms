@@ -23,4 +23,15 @@ class JewelsAndStonesTest {
 
         assertEquals(expected, result);
     }
+
+    @Test
+    void solutionB() {
+        String s = "aAAbbbb";
+        String j = "aA";
+        int expected = 3;
+
+        int result = jewelsAndStones.solutionB(s, j);
+
+        assertEquals(expected, result);
+    }
 }
