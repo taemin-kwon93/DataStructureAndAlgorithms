@@ -47,7 +47,7 @@ public class MergeSort {
 //            x[i] = stdIn.nextInt();
 //        }
 
-        int[] x = {1, 3, 12, 6, 4, 11, 8, 7, 3, 2, 6, 5};
+        int[] x = {6, 4, 3, 7, 1, 9, 8};
 
         mergeSort(x, x.length);
 
