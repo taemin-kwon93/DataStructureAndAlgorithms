@@ -16,6 +16,11 @@ public class MergeSort {
             __mergeSort(a, left, center);
             __mergeSort(a, center + 1, right);
 
+            for (int x : a) {
+                System.out.print(x + " ");
+            }
+            System.out.println();
+
             for (i = left; i <= center; i++)
                 buff[p++] = a[i];
 
@@ -37,17 +42,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-//        Scanner stdIn = new Scanner(System.in);
-//        System.out.println("병합 정렬");
-//        System.out.print("요솟수 : ");
-//        int nx = stdIn.nextInt();
-//        int[] x = new int[nx];
-//        for (int i = 0; i < nx; i++) {
-//            System.out.println("x[" + i + "]: ");
-//            x[i] = stdIn.nextInt();
-//        }
-
-        int[] x = {6, 4, 3, 7, 1, 9, 8};
+        int[] x = {6, 4, 7, 3, 9, 1, 8};
 
         mergeSort(x, x.length);
 
