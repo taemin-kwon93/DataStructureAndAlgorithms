@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ArrayPartiton1Test {
-    private ArrayPartiton1 arrayPartiton1;
+class ArrayPartition1Test {
+    private ArrayPartition1 arrayPartiton1;
 
     @BeforeEach
     void setUp() {
-        arrayPartiton1 = new ArrayPartiton1();
+        arrayPartiton1 = new ArrayPartition1();
     }
 
     @Test
