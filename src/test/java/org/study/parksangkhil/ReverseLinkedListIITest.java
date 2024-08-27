@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ReversLinkedListIITest {
-    private ReversLinkedListII reversLinkedListII;
+class ReverseLinkedListIITest {
+    private ReverseLinkedListII reversLinkedListII;
 
     @BeforeEach
     void setUp() {
-        reversLinkedListII = new ReversLinkedListII();
+        reversLinkedListII = new ReverseLinkedListII();
     }
 
     @Test

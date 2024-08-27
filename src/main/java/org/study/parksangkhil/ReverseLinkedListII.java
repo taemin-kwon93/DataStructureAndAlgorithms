@@ -2,7 +2,7 @@ package org.study.parksangkhil;
 
 
 
-public class ReversLinkedListII {
+public class ReverseLinkedListII {
     public ListNode solution(ListNode head, int start, int end) {
         if (head == null || start >= end) {
             return head;
