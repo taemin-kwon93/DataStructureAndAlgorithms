@@ -7,14 +7,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MaximumDepthOfTreeTest {
     private MaximumDepthOfTree maximumDepthOfTree;
-    private static TreeNode n7 = new TreeNode(7);
-    private static TreeNode n6 = new TreeNode(15);
-    private static TreeNode n5 = new TreeNode();
-    private static TreeNode n4 = new TreeNode();
-    private static TreeNode n3 = new TreeNode(20, n6, n7);
-    private static TreeNode n2 = new TreeNode(9, n4, n5);
-    private static TreeNode root = new TreeNode(3, n2, n3);
-    private static int expected = 3;
+    private static final TreeNode n7 = new TreeNode(7);
+    private static final TreeNode n6 = new TreeNode(15);
+    private static final TreeNode n5 = new TreeNode();
+    private static final TreeNode n4 = new TreeNode();
+    private static final TreeNode n3 = new TreeNode(20, n6, n7);
+    private static final TreeNode n2 = new TreeNode(9, n4, n5);
+    private static final TreeNode root = new TreeNode(3, n2, n3);
+    private static final int expected = 3;
 
     @BeforeEach
     void setUp() {
