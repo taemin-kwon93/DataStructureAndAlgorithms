@@ -2,7 +2,7 @@ package org.study.parksangkhil;
 
 import java.util.*;
 
-public class ConstructBSUsingReferType {
+public class ConstructBTUsingReferType {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         List<Integer> preOrder = new ArrayList<>();
         List<Integer> inOrder = new ArrayList<>();

@@ -1,6 +1,6 @@
 package org.study.parksangkhil;
 
-public class ConstructBS {
+public class ConstructBT {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         return dfs(0, 0, inorder.length - 1, preorder, inorder);
     }

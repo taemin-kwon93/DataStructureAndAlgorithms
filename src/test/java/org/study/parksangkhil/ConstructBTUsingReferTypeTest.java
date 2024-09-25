@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ConstructBSUsingReferTypeTest {
-    private ConstructBSUsingReferType constructBSUsingRef;
+class ConstructBTUsingReferTypeTest {
+    private ConstructBTUsingReferType constructBTUsingRef;
 
     @BeforeEach
     void setUp() {
-        constructBSUsingRef = new ConstructBSUsingReferType();
+        constructBTUsingRef = new ConstructBTUsingReferType();
     }
 
     @Test
@@ -28,7 +28,7 @@ class ConstructBSUsingReferTypeTest {
         TreeNode n2 = new TreeNode(2, n4, n5);
         TreeNode expected = new TreeNode(1, n2, n3);
 
-        TreeNode result = constructBSUsingRef.buildTree(preorder, inorder);
+        TreeNode result = constructBTUsingRef.buildTree(preorder, inorder);
 
         assertTrue(areTreesEqual(expected, result));
     }

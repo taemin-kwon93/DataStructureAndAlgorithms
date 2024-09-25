@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ConstructBSTest {
-    private ConstructBS constructBS;
+class ConstructBTTest {
+    private ConstructBT constructBT;
 
     @BeforeEach
     void setUp() {
-        constructBS = new ConstructBS();
+        constructBT = new ConstructBT();
     }
 
     @Test
@@ -28,7 +28,7 @@ class ConstructBSTest {
         TreeNode n2 = new TreeNode(2, n4, n5);
         TreeNode expected = new TreeNode(1, n2, n3);
 
-        TreeNode result = constructBS.buildTree(preorder, inorder);
+        TreeNode result = constructBT.buildTree(preorder, inorder);
 
         assertTrue(areTreesEqual(expected, result));
     }
