@@ -1,15 +1,5 @@
 package org.study.parksangkhil;
 
-class TrieNode {
-    boolean isWord;
-    TrieNode[] children;
-
-    public TrieNode() {
-        children = new TrieNode[26];
-        isWord = false;
-    }
-}
-
 public class Trie {
     TrieNode root;
 
