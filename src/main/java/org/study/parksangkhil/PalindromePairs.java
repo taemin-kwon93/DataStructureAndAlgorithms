@@ -57,7 +57,6 @@ public class PalindromePairs {
             for (int i = word.length() - 1; i >= 0; i--) {
                 // 단어에서 해당 위치의 문자 추출
                 char c = word.charAt(i);
-                // TODO: 아래 코드 분석, 정방향으로 해당 위치까지 팰린드롬인 경우 단어의 인덱스 저장
                 if (isPalindrome(word, 0, i)) {
                     cur.palindromeWordIds.add(index);
                 }
