@@ -36,7 +36,9 @@ public class InsertionSortList {
             head.next = pNext;
             head = hNext;
 
-            p = parent;
+            if (head != null && p.val > head.val) {
+                p = parent;
+            }
          }
 
         return parent.next;
