@@ -3,6 +3,8 @@ package org.study.algorithm;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 class UTF8ValidationTest {
     private Utf8Validation utf8Validation;
 
@@ -25,10 +27,10 @@ class UTF8ValidationTest {
         boolean result4 = utf8Validation.validUtf8(data4);
         boolean result5 = utf8Validation.validUtf8(data5);
 
-        System.out.println(result1);
-        System.out.println(result2);
-        System.out.println(result3);
-        System.out.println(result4);
-        System.out.println(result5);
+        assertTrue(result1);
+        assertFalse(result2);
+        assertFalse(result3);
+        assertFalse(result4);
+        assertFalse(result5);
     }
 }
