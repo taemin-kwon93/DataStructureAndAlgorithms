@@ -13,23 +13,17 @@ public class SumThreeNumbers {
             right = nums.length - 1;
             if (i > 0 && nums[i] == nums[i - 1]) continue;
             while (left < right) {
-                List<Integer> tmpList = new ArrayList<>();
                 int tmp = nums[i] + nums[left] + nums[right];
                 if (tmp < 0) {
                     left++;
                 } else if (tmp > 0) {
                     right--;
                 } else {
-                    tmpList.addAll(Arrays.asList(nums[i], nums[left], nums[right]));
+                    answer.add(Arrays.asList(nums[i], nums[left], nums[right]));
                     left++;
                     right--;
-
                     while (left < right && nums[left] == nums[left - 1]) left++;
                     while (left < right && nums[right] == nums[right + 1]) right--;
-
-                }
-                if (!tmpList.isEmpty()) {
-                    answer.add(tmpList);
                 }
             }
         }
