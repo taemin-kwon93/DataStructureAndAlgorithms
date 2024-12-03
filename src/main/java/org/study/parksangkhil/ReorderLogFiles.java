@@ -12,18 +12,14 @@ public class ReorderLogFiles {
 
         for (String s : strArr) {
             String[] tmp = s.split(" ");
-            if (tmp[1].charAt(0) < 57) {
+            if (Character.isDigit(tmp[1].charAt(0))) {
                 digitList.add(s);
             } else {
                 letterList.add(s);
             }
         }
 
-        // 문자 List 정렬
-        System.out.println(letterList); // 정렬 이전 출력
         letterList.sort(LETTER_ORDER);
-        System.out.println(letterList); // 정렬 이후 출력
-
         letterList.addAll(digitList);
 
         return letterList.toArray(new String[0]);
@@ -35,9 +31,9 @@ public class ReorderLogFiles {
         public int compare(String s1, String s2) {
             String[] a = s1.split(" ", 2);
             String[] b = s2.split(" ", 2);
+
             int compared = a[1].compareTo(b[1]);
             if (compared == 0) {
-                // 값이 같으면 id의 순서에 따라 정렬을 요구함
                 return a[0].compareTo(b[0]);
             } else {
                 return a[1].compareTo(b[1]);

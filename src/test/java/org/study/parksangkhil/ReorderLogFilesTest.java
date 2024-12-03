@@ -15,11 +15,15 @@ class ReorderLogFilesTest {
 
     @Test
     void solution() {
-        String[] strArr = {"id1 8 1 5 2", "id2 art can", "id3 3 6", "id4 own kit dig", "id5 art zero"};
-        String[] expected = {"id2 art can", "id5 art zero", "id4 own kit dig", "id1 8 1 5 2", "id3 3 6"};
+        String[] logs1 = {"dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero"};
+        String[] logs2 = {"a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo"};
+        String[] expected1 = {"let1 art can","let3 art zero","let2 own kit dig","dig1 8 1 5 1","dig2 3 6"};
+        String[] expected2 = {"g1 act car","a8 act zoo","ab1 off key dog","a1 9 2 3 1","zo4 4 7"};
 
-        String[] result = reorderLogFiles.solution(strArr);
+        String[] result1 = reorderLogFiles.solution(logs1);
+        String[] result2 = reorderLogFiles.solution(logs2);
 
-        assertArrayEquals(expected, result);
+        assertArrayEquals(expected1, result1);
+        assertArrayEquals(expected2, result2);
     }
 }
