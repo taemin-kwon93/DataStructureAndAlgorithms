@@ -1,7 +1,5 @@
 package org.study.algorithm;
 
-import java.util.*;
-
 public class WeaponOfKnights {
     public int solution(int number, int limit, int power) {
         if (number < 2 && limit < 1) {
