@@ -20,9 +20,9 @@ class WeaponOfKnightsTest {
         int result3 = weaponOfKnights.solution(1, 0, 2);
         int result4 = weaponOfKnights.solution(1, 3, 2);
 
-        System.out.println(result1);
-        System.out.println(result2);
-        System.out.println(result3);
-        System.out.println(result4);
+        assertEquals(10, result1);
+        assertEquals(21, result2);
+        assertEquals(0, result3);
+        assertEquals(1, result4);
     }
 }
