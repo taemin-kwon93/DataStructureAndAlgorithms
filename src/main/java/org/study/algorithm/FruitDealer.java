@@ -1,5 +1,6 @@
 package org.study.algorithm;
 
+import org.study.bohyohshibata.SelectionSort;
 import java.util.*;
 
 public class FruitDealer {
@@ -8,9 +9,7 @@ public class FruitDealer {
         Arrays.sort(score);
         int left = 0, right = score.length - 1;
         while (left < right) {
-            int temp = score[left];
-            score[left] = score[right];
-            score[right] = temp;
+            SelectionSort.swap(score, left, right);
             left++;
             right--;
         }
