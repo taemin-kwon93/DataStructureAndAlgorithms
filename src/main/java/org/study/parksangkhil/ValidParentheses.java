@@ -54,4 +54,29 @@ public class ValidParentheses {
 
         return stack.isEmpty();
     }
+
+    // Runtime 이 가장 빠른 풀이
+    public boolean isValidC(String s) {
+        if (s.startsWith(")") || s.startsWith("]") || s.startsWith("}")) return false;
+        Deque<Character> dq = new ArrayDeque<>();
+        for (Character c : s.toCharArray()) {
+            switch (c) {
+                case '(', '[', '{' -> dq.push(c);
+                case ')' -> {
+                    if (dq.isEmpty()) return false;
+                    if (dq.pop() != '(') return false;
+                }
+                case '}' -> {
+                    if (dq.isEmpty()) return false;
+                    if (dq.pop() != '{') return false;
+                }
+                case ']' -> {
+                    if (dq.isEmpty()) return false;
+                    if (dq.pop() != '[') return false;
+                }
+            }
+        }
+
+        return dq.isEmpty();
+    }
 }
